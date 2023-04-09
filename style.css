@@ -1,0 +1,28 @@
+body{
+    background-color: bisque;
+    margin:0px;
+}
+.header {
+    background-color:rgb(249, 173, 74);
+    padding:15px;
+    
+}
+.header a{
+   margin-left: 20px;
+   color:black;
+   background-color: magenta;
+   padding:8px;
+   border-radius: 22px;
+   text-align: center;
+   text-decoration: none;
+
+}
+
+.header-right{
+    float :right;
+
+}
+.header-right a{
+    background-color: blue;
+    color:white;
+}
