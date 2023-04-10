@@ -31,6 +31,12 @@ body{
     padding:8px;
 }
 .calculator_display{
-    size:100px;
     background-color: coral;
+    width:40%;
+    margin-left:400px;
+    height: 500px;
+
+
 }
+
+
