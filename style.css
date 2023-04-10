@@ -11,10 +11,11 @@ body{
    margin-left: 20px;
    color:black;
    background-color: magenta;
-   padding:8px;
+   padding:9px;
    border-radius: 22px;
    text-align: center;
    text-decoration: none;
+   font-family: Verdana, Geneva, Tahoma, sans-serif;
 
 }
 
@@ -23,6 +24,13 @@ body{
 
 }
 .header-right a{
-    background-color: blue;
+    background-color: rgb(65, 65, 254);
     color:white;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-size:15px;
+    padding:8px;
+}
+.calculator_display{
+    size:100px;
+    background-color: coral;
 }
