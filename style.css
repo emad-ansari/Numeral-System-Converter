@@ -1,6 +1,7 @@
-body{
-    background-color: bisque;
+#background_image{
+    background-image: url("background_image.jpg");
     margin:0px;
+
 }
 .header {
     background-color:rgb(249, 173, 74);
@@ -18,25 +19,91 @@ body{
    font-family: Verdana, Geneva, Tahoma, sans-serif;
 
 }
+.header a:hover{
+    background-color: rgb(178, 12, 178);
+}
 
 .header-right{
     float :right;
 
 }
 .header-right a{
-    background-color: rgb(65, 65, 254);
+    background-color:rgb(11, 125, 11);
     color:white;
     font-family: Verdana, Geneva, Tahoma, sans-serif;
     font-size:15px;
     padding:8px;
 }
+#Mydiv > div{
+    float:left;
+    
+
+}
 .calculator_display{
-    background-color: coral;
-    width:40%;
-    margin-left:400px;
+    background-color:rgb(246, 185, 94);
+    width:35%;
+    margin-left:500px;
     height: 500px;
+    margin-inline: 300px;
+    border-radius: 8px;
+}
+
+#current_base{
+    padding: 6px;
+    margin-block-start: 15px;
+    width:200px;
+    margin-right: 2px;
+    border-radius:5px;
+}
+
+#converted_base{
+    padding:6px;
+    width:200px;
+    border-radius:5px;   
+}
+#input_number{
+    margin-block-start: 2px;
+    margin-inline-start: 45px;
+    padding: 8px;
+    border-radius: 5px;
+    width: 425px;
+    border: 1px;
+    border: 1px solid black;
+    
+}
+label{
+    display: inline-block;
+    margin:5px;
+}
+#number-input-label{
+    margin-block-start:40px;
+}
+#convert{
+    margin-inline-start: 43px;
+    padding: 7px;
+    border-radius: 5px;
+    background-color: green;
+    border: 0px white;
+    color:white;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+
+}
+#reset{
+    margin-inline-start: 44px;
+    padding: 7px;
+    border-radius: 5px;
+    background-color: green;
+    border: 0px white;
+    color:white;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    width: 60px;
 
 
 }
-
-
+#side-scroll-bar{
+    margin:0px;
+    width: 200px;
+    background-color: white;
+    height: auto;
+    scroll-behavior: smooth;
+}

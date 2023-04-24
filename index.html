@@ -9,29 +9,64 @@
     <link href="/style.css" rel="stylesheet">
 </head>
 
-<body>
-    <div class = "header">
-        <a href = "#default">Education</a>
-        <a href = "#default">Skills</a>
-        <a href = "#default">Project</a>
-        <div class = "header-right">
-            <a href = "#default">LogIn</a>
+<body id="background_image">
+    <div class="header">
+        <a href="#default">Education</a>
+        <a href="#default">Skills</a>
+        <a href="#default">Project</a>
+        <div class="header-right">
+            <a href="#default">LogIn</a>
         </div>
-    </div><br><br><br>
-    <br>
-    <br>
-    <br>
-    <main>
-        <div class = "calculator_display">
-            <input type="number">
-            <input type="button">
-
-        
-
-
+    </div>
+    <div id = "Mydiv">
+        <div id="side-scroll-bar">
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Deserunt error corporis
+            quibusdam ipsam nostrum libero ab reprehenderit, eveniet at assumenda. Minus
+            ad neque, deleniti necessitatibus eius excepturi officiis assumenda ut doloribus,
+            saepe ratione impedit sapiente tempore quisquam recusandae enim a itaque ducimus ape
+            riam consequuntur vel alias repellendus! At earum quis voluptates illum praesentium et
+            porro iusto accusamus nam explicabo molestiae laudantium hic neque consequatur blanditiis
+            enim magni odit, deleniti odio. Aspernatur ratione numquam sequi quibusdam sit nobis
+            quisquam, reprehenderit illum alias? Nihil quisquam fugit,
+            dolorem minima mollitia error est ea nesciunt, nam totam quae reiciendis sequi corrupti saepe ullam
+            necessitatibus?
 
         </div>
-    </main>
+        <br>
+        <br>
+        <br>
+        <br>
+        <br>
+        <br>
+        <br>
+        <br>
+        <br>
+        <br>
+
+
+        <div class="calculator_display">
+            <label for="current_base">From</label>
+            <select id="current_base">
+                <option value="Decimal">Decimal</option>
+                <option value="Octal">Octal</option>
+                <option value="binary">binary</option>
+                <option value="Hexa-Decimal">Hexa-Decimal</option>
+            </select>
+            <label for="converted_base">To</label>
+            <select id="converted_base">
+                <option value="Decimal">Decimal</option>
+                <option value="Octal">Octal</option>
+                <option value="binary">binary</option>
+                <option value="Hexa-Decimal">Hexa-Decimal</option>
+            </select>
+            <label id="number-input-label" for="input_number">Enter the Number :</label>
+            <input id="input_number" type="text" placeholder="Enter a Number">
+            <br><br>
+            <button  id = "convert"type="submit">Convert</button>
+            <button id = "reset" type="submit">Reset</button>
+        </div>
+    </div>
+
 
 
 
