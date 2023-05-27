@@ -75,7 +75,6 @@ a[ href="#default4"]:hover{
     width: 425px;
     border: 1px;
     border: 1px solid black;
-    
 }
 label{
     display: inline-block;
@@ -92,7 +91,6 @@ label{
     border: 0px white;
     color:white;
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-
 }
 
 #reset{
@@ -104,12 +102,7 @@ label{
     color:white;
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
     width: 60px;
-
-
 }
-
-
-
 
 #side-scroll-bar{
     margin:0px;
@@ -128,5 +121,32 @@ label{
 #side-scroll-bar::-webkit-scrollbar-thumb{
     box-shadow: inset 0 0 6px rgba(0, 0, 0, 0.3);
     background-color: darkgrey;
+} 
+
+#result_display{
+    border-radius: 5px;
+    width: 398px;
+    border: 1px solid;
+    padding :25px;
+    background-color: white;
+    margin-left:40px;
+}
+#side-scroll-bar{
+    background-color: rgb(21,32,43);
+}
+#side-scroll-bar a{
+    color:white;
+    text-decoration: none;
+    font-size: 14px;
+    font-family: "Segoe UI",Arial,sans-serif;
+    margin-left:5px;
+    display : block;
+    margin-bottom: 3px;
+
+
+
+}
+#side-scroll-bar a:hover{
+    background-color: rgb(117, 117, 117);
 
 }
