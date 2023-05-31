@@ -7,6 +7,7 @@
     background-color:rgb(249, 173, 74);
     padding:15px;
     
+    
 }
 .header a{
    margin-left: 20px;
@@ -27,7 +28,6 @@
 
 .header-right{
     float :right;
-
 }
 a[ href="#default4"]:hover{
     background-color: darkgreen;
@@ -40,96 +40,66 @@ a[ href="#default4"]:hover{
     font-size:15px;
     padding:8px;
 }
-#Mydiv > div{
-    float:left;
+.claculator-display{
+    border:1px  solid black;
+    border-radius:8px;
+    background-color: chocolate;
+    width: 450px;
+    height:500px;
+    padding:12px;
+    display:inline-block;
     
-
 }
-.calculator_display{
-    background-color:rgb(246, 185, 94);
-    width:35%;
-    margin-left:500px;
-    height: 500px;
-    margin-inline: 300px;
-    border-radius: 8px;
-}
-
-#current_base{
-    padding: 6px;
-    margin-block-start: 15px;
-    width:200px;
-    margin-right: 2px;
+.select-inputs1 ,.select-inputs2{
+    padding:5px;
     border-radius:5px;
+    width:180px;
+    display:inline-block;
+}
+#Input-Number{
+    width:400px;
+    padding:10px;
+    border-radius: 5px;
 }
 
-#converted_base{
-    padding:6px;
-    width:200px;
-    border-radius:5px;   
-}
-#input_number{
-    margin-block-start: 2px;
-    margin-inline-start: 45px;
-    padding: 8px;
-    border-radius: 5px;
-    width: 425px;
-    border: 1px;
-    border: 1px solid black;
-}
-label{
+#Button{
     display: inline-block;
-    margin:5px;
+    margin-left:150px;
+   
+   
 }
-#number-input-label{
-    margin-block-start:40px;
-}
-#convert{
-    margin-inline-start: 43px;
-    padding: 7px;
-    border-radius: 5px;
-    background-color: green;
-    border: 0px white;
+#reset {
+    margin-left: 30px;
+    padding:6px;
+    width:70px;
+    font-size:15px;
+    border-radius:5px;
+    background-color: rgb(16, 105, 178);
     color:white;
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    border:0px white;
+    display:inline-block;
 }
 
-#reset{
-    margin-inline-start: 44px;
-    padding: 7px;
-    border-radius: 5px;
-    background-color: green;
-    border: 0px white;
+#convert{
+    padding: 6px;
+    width:70px;
+    font-size:15px;
+    border-radius:5px;
+    background-color: rgb(16, 105, 178);
     color:white;
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-    width: 60px;
+    border:0px white;
 }
+
 
 #side-scroll-bar{
     margin:0px;
     width: 220px;
+    display:inline-block;
     background-color: white;
     height: 600px;
-    overflow: auto;
-    overflow-y: scroll;
-}
-#side-scroll-bar::-webkit-scrollbar{
-    width : 15px;
-}
-#side-scroll-bar::-webkit-scrollbar-track{
-    background-color: rgb(197, 197, 197);
-}
-#side-scroll-bar::-webkit-scrollbar-thumb{
-    box-shadow: inset 0 0 6px rgba(0, 0, 0, 0.3);
-    background-color: darkgrey;
-} 
-
-#result_display{
-    border-radius: 5px;
-    width: 398px;
-    border: 1px solid;
-    padding :25px;
-    background-color: white;
-    margin-left:40px;
+    overflow: auto; 
 }
 #side-scroll-bar{
     background-color: rgb(21,32,43);
@@ -142,11 +112,21 @@ label{
     margin-left:5px;
     display : block;
     margin-bottom: 3px;
-
-
-
 }
 #side-scroll-bar a:hover{
-    background-color: rgb(117, 117, 117);
+    background-color: rgb(103, 103, 103);
+}
+#Output{
+    
 
+}
+
+#output{
+    display:inline-block;
+    width:425px;
+    
+}
+.claculator-display label{
+    font-size:18px;
+    font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', Geneva, Verdana, sans-serif
 }

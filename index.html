@@ -21,13 +21,10 @@
     <div id="Mydiv">
         <div id="side-scroll-bar">
             <div style="color:lightslategray; font-size: 30px; margin-left: 5px;">Table Contents</div><br>
-            <div class = "content"><a href = "defualt" >What are Number System</a></div>
-            <div class = "content"><a href = "defualt" >Number System</a></div>
-            <div class = "content"><a href = "defualt" >Number System</a></div>
-            <div class = "content"><a href = "defualt" >Number System</a></div>
-
-
-            
+            <div class="content"><a href="defualt">What are Number System</a></div>
+            <div class="content"><a href="defualt">Number System</a></div>
+            <div class="content"><a href="defualt">Number System</a></div>
+            <div class="content"><a href="defualt">Number System</a></div>
 
             Lorem ipsum dolor sit amet consectetur adipisicing elit. Deserunt error corporis
             quibusdam ipsam nostrum libero ab reprehenderit, eveniet at assumenda. Minus
@@ -52,42 +49,41 @@
 
 
         </div>
-        <br>
-        <br>
-        <br>
-        <br>
-        <br>
-        <br>
-        <br>
-        <br>
-        <br>
-        <br>
-        <div class="calculator_display">
-            <label for="current_base">From</label>
-            <select id="current_base">
-                <option value="Decimal">Decimal</option>
-                <option value="Octal">Octal</option>
-                <option value="binary">binary</option>
-                <option value="Hexa-Decimal">Hexa-Decimal</option>
-            </select>
-            <label for="converted_base">To</label>
-            <select id="converted_base">
-                <option value="Decimal">Decimal</option>
-                <option value="Octal">Octal</option>
-                <option value="binary">binary</option>
-                <option value="Hexa-Decimal">Hexa-Decimal</option>
-            </select>
-            <label id="number-input-label" for="input_number">Enter the Number :</label>
-            <input id="input_number" type="text" placeholder="Enter a Number">
-            <br><br>
-            <button id="convert" type="submit">Convert</button>
-            <button id="reset" type="submit">Reset</button>
-            <br>
-            <br>
-            <label for = "result_display">Result :</label>
-            <div id = "result_display">
+        <form class="claculator-display">
+            <div>
+                <label for="select-inputs1">From</label>
+                <select class="select-inputs1">
+                    <option value="Decimal">Decimal</option>
+                    <option value="Binary">Binary</option>
+                    <option value="Octal">Octal</option>
+                    <option value="HexaDecimal">HexaDecimal</option>
+                </select>
+                <label for="select-inputs2">To</label>
+                <select class="select-inputs2">
+                    <option value="Decimal">Decimal</option>
+                    <option value="Binary">Binary</option>
+                    <option value="Octal">Octal</option>
+                    <option value="HexaDecimal">HexaDecimal</option>
+                </select>
+            </div><br><br>
+            <div>
+                <label for="Input-Number">Enter Number : </label>
+                <div><input type="text" id="Input-Number" placeholder="Enter a number"></div>
             </div>
-        </div>
+            <br>
+            <br>
+            <div id="Button">
+                <button id="convert" type="submit">Convert</button>
+                <button id="reset" type="reset">Reset</button>
+            </div>
+            <br>
+            <br><br>
+
+            <div id = "Output">
+                <label for="output">Result :</label>
+                <div><textarea id="output" rows="3"></textarea></div>
+            </div>
+        </form>
     </div>
 </body>
 
