@@ -6,8 +6,6 @@
 .header {
     background-color:rgb(249, 173, 74);
     padding:15px;
-    
-    
 }
 .header a{
    margin-left: 20px;
@@ -40,15 +38,24 @@ a[ href="#default4"]:hover{
     font-size:15px;
     padding:8px;
 }
+div.Mydiv{
+    display:flex;
+    flex-wrap:wrap;
+}
 .claculator-display{
-    border:1px  solid black;
+    border:0  solid black;
     border-radius:8px;
     background-color: chocolate;
     width: 450px;
     height:500px;
     padding:12px;
     display:inline-block;
-    
+    margin-top:200px;
+    /* box-shadow: ; */
+}
+.claculator-display label{
+    font-size:18px;
+    font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', Geneva, Verdana, sans-serif
 }
 .select-inputs1 ,.select-inputs2{
     padding:5px;
@@ -57,17 +64,19 @@ a[ href="#default4"]:hover{
     display:inline-block;
 }
 #Input-Number{
-    width:400px;
-    padding:10px;
-    border-radius: 5px;
+    width:410px;
+    padding:11px;
+    border-radius: 6px;
+    border:0.5px;
+    font-size:15px;
+    margin-block-start:5px;
 }
 
 #Button{
     display: inline-block;
-    margin-left:150px;
-   
-   
+    margin-left:145px;
 }
+
 #reset {
     margin-left: 30px;
     padding:6px;
@@ -92,6 +101,13 @@ a[ href="#default4"]:hover{
     border:0px white;
 }
 
+#output{
+    display:inline-block;
+    width:430px;
+    margin-block-start:5px;
+    border-radius:8px; 
+}
+
 
 #side-scroll-bar{
     margin:0px;
@@ -100,6 +116,7 @@ a[ href="#default4"]:hover{
     background-color: white;
     height: 600px;
     overflow: auto; 
+    margin-right:300px;
 }
 #side-scroll-bar{
     background-color: rgb(21,32,43);
@@ -116,17 +133,7 @@ a[ href="#default4"]:hover{
 #side-scroll-bar a:hover{
     background-color: rgb(103, 103, 103);
 }
-#Output{
-    
 
-}
 
-#output{
-    display:inline-block;
-    width:425px;
-    
-}
-.claculator-display label{
-    font-size:18px;
-    font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', Geneva, Verdana, sans-serif
-}
+
+
