@@ -1,4 +1,4 @@
-#background_image{
+.background_image{
     background-image: url("background_image.jpg");
     margin:0px;
 
@@ -43,7 +43,6 @@ div.Mydiv{
     flex-wrap:wrap;
 }
 .claculator-display{
-    border:0  solid black;
     border-radius:8px;
     background-color: chocolate;
     width: 450px;
@@ -51,7 +50,6 @@ div.Mydiv{
     padding:12px;
     display:inline-block;
     margin-top:200px;
-    /* box-shadow: ; */
 }
 .claculator-display label{
     font-size:18px;
