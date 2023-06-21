@@ -1,50 +1,68 @@
 .background_image{
-    background-image: url("background_image.jpg");
     margin:0px;
+    font-family: 'Roboto Flex', sans-serif;
 
 }
 .header {
-    background-color:rgb(249, 173, 74);
-    padding:15px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 60px;
+    border-bottom:1px solid  rgb(206, 203, 203);
+    
+   
 }
 .header a{
    margin-left: 20px;
-   color:black;
-   background-color: magenta;
-   color: white;
-   padding:9px;
-   border-radius: 22px;
+   
+   color:  black;
+   padding:6px;
+   border-radius: 4px;
    text-align: center;
    text-decoration: none;
-   font-family: Verdana, Geneva, Tahoma, sans-serif;
-   font-size:15px;
+   font-family: 'Roboto Flex', sans-serif;
+   font-size:14px;
 
 }
-.header a:hover{
-    background-color: rgb(178, 12, 178);
-}
 
-.header-right{
-    float :right;
-}
-a[ href="#default4"]:hover{
-    background-color: darkgreen;
+.header-left{
+    display: flex;
+    justify-content: space-between;
+    width: 280px;
 
 }
+.header-left a{
+    border:1.5px solid rgb(234, 132, 7);
+
+
+}
+.header-left a:hover{
+    background-color:  rgb(234, 132, 7);
+}
+
+
 .header-right a{
-    background-color:rgb(11, 125, 11);
-    color:white;
+    border: 1.5px solid rgb(58, 194, 58);
+    color:black;
     font-family: Verdana, Geneva, Tahoma, sans-serif;
-    font-size:15px;
-    padding:8px;
+    font-size:14px;
+    margin-right: 20px;
+    
 }
+
+.header-right a:hover{
+    background-color: rgb(58, 194, 58);;
+
+}
+
+
 div.Mydiv{
     display:flex;
     flex-wrap:wrap;
 }
 .claculator-display{
     border-radius:8px;
-    background-color: chocolate;
+    background-color:rgb(234, 132, 7);
     width: 450px;
     height:500px;
     padding:12px;
@@ -52,51 +70,61 @@ div.Mydiv{
     margin-top:200px;
 }
 .claculator-display label{
-    font-size:18px;
-    font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', Geneva, Verdana, sans-serif
+    font-size:15px;
+    font-family: 'Roboto Flex', sans-serif;
+    color:rgb(59, 59, 59);
 }
 .select-inputs1 ,.select-inputs2{
     padding:5px;
-    border-radius:5px;
-    width:180px;
+    border-radius:3px;
+    border: none;
+    width:190px;
     display:inline-block;
+    background-color:  rgb(223, 219, 219);
 }
 #Input-Number{
-    width:410px;
+    width:418px;
     padding:11px;
-    border-radius: 6px;
+    border-radius: 0px;
+    background-color: rgb(223, 219, 219);
     border:0.5px;
     font-size:15px;
     margin-block-start:5px;
 }
 
 #Button{
-    display: inline-block;
+    display: flex;
     margin-left:145px;
 }
 
 #reset {
     margin-left: 30px;
     padding:6px;
-    width:70px;
+    width:80px;
     font-size:15px;
-    border-radius:5px;
-    background-color: rgb(16, 105, 178);
+    border-radius:0px;
+    background-color: black;
     color:white;
-    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-family: 'Roboto Flex', sans-serif;
     border:0px white;
-    display:inline-block;
+    
 }
 
 #convert{
-    padding: 6px;
-    width:70px;
+    padding-top: 6px;
+    padding-bottom: 6px;
+    padding-left: 9px;
+    padding-right: 9px;
+    width:80px;
     font-size:15px;
-    border-radius:5px;
-    background-color: rgb(16, 105, 178);
+    border-radius:0px;
+    background-color: black;
     color:white;
-    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-family: 'Roboto Flex', sans-serif;
     border:0px white;
+}
+#convert , #reset, :hover{
+    cursor:pointer;
 }
 
 #output{
@@ -104,6 +132,7 @@ div.Mydiv{
     width:430px;
     margin-block-start:5px;
     border-radius:8px; 
+    background-color: rgb(223, 219, 219);
 }
 
 

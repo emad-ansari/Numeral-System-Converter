@@ -7,15 +7,28 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Numeral System Converter</title>
     <link href="/styles.css" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Nunito:wght@200;300;400;500;600;700&family=Roboto+Flex:wght@400;500&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+        integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
 </head>
 
 <body class="background_image">
     <div class="header">
-        <a href="#default1">Education</a>
-        <a href="#default2">Skills</a>
-        <a href="#default3">Project</a>
+        <div class="header-left">
+            <div><a href="#default1">Education</a></div>
+            <div><a href="#default2">Skills</a></div>
+            <div><a href="#default3">Project</a></div>
+        </div>
+
         <div class="header-right">
-            <a href="#default4">LogIn</a>
+            <div>
+                <div><a href="#default4">LogIn</a></div>
+            </div>
         </div>
     </div>
     <div class="Mydiv">
@@ -70,42 +83,46 @@
             Aliquid asperiores blanditiis libero temporibus repellat, impedit commodi mollitia corrupti laboriosam?
         </div>
 
+        <div>
 
-        <form class="claculator-display">
-            <div>
-                <label for="select-inputs1">From</label>
-                <select class="select-inputs1">
-                    <option value="Decimal">Decimal</option>
-                    <option value="Binary">Binary</option>
-                    <option value="Octal">Octal</option>
-                    <option value="HexaDecimal">HexaDecimal</option>
-                </select>
-                <label for="select-inputs2">To</label>
-                <select class="select-inputs2">
-                    <option value="Decimal">Decimal</option>
-                    <option value="Binary">Binary</option>
-                    <option value="Octal">Octal</option>
-                    <option value="HexaDecimal">HexaDecimal</option>
-                </select>
-            </div><br><br>
-            <div>
-                <label for="Input-Number">Enter Number : </label>
-                <div><input type="text" id="Input-Number" placeholder="Enter a number"></div>
-            </div>
-            <br>
-            <br>
-            <div id="Button">
-                <button id="convert" type="submit">Convert</button>
-                <button id="reset" type="reset">Reset</button>
-            </div>
-            <br>
-            <br><br>
-            <div id="Output">
-                <label for="output">Result :</label>
-                <div><textarea id="output" rows="4"></textarea></div>
-            </div>
-        </form>
+            <form class="claculator-display">
+                <div>
+                    <label for="select-inputs1">From</label>
+                    <select class="select-inputs1">
+                        <option value="Decimal">Decimal</option>
+                        <option value="Binary">Binary</option>
+                        <option value="Octal">Octal</option>
+                        <option value="HexaDecimal">HexaDecimal</option>
+                    </select>
+                    <label for="select-inputs2">To</label>
+                    <select class="select-inputs2">
+                        <option value="Decimal">Decimal</option>
+                        <option value="Binary">Binary</option>
+                        <option value="Octal">Octal</option>
+                        <option value="HexaDecimal">HexaDecimal</option>
+                    </select>
+                </div><br><br>
+                <div>
+                    <label for="Input-Number">Enter Number : </label>
+                    <div><input type="text" id="Input-Number" placeholder="Enter a number"></div>
+                </div>
+                <br>
+                <br>
+                <div id="Button">
+                    <button id="convert" type="submit">Convert</button>
+                    <button id="reset" type="reset">Reset</button>
+                </div>
+                <br>
+                <br><br>
+                <div id="Output">
+                    <label for="output">Result :</label>
+                    <div><textarea id="output" rows="4"></textarea></div>
+                </div>
+            </form>
+        </div>
     </div>
+
+    <script src="calculator.js"></script>
 </body>
 
 </html>
