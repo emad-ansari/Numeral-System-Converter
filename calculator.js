@@ -1,8 +1,112 @@
-let num = 1010;
-let current_base = 2;
+function currentBase(){
+    let current_base;
+    let select1 = document.getElementById("select-inputs1").value;
+    if( select1 == "Decimal"){
+        current_base = 10;
+    }
+    else if (select1 == "Binary"){
+        current_base = 2;
+    }
+    else if (select1 == "Octal"){
+        current_base = 8;
+    }
+    else if (select1 == "HexaDecimal"){
+        current_base = 16;
+    }
+    else {
 
-let ans = anySystemToDecimal(num, current_base);
-console.log(ans);
+    }
+    return current_base;
+} 
+function finalBase(){
+    let final_base;
+    let select2 = document.getElementById("select-inputs2").value;
+    if( select2 == "Decimal"){
+        final_base = 10;
+    }
+    else if (select2 == "Binary"){
+        final_base = 2;
+    }
+    else if (select2 == "Octal"){
+        final_base = 8;
+    }
+    else if (select2 == "HexaDecimal"){
+        final_base = 16;
+    }
+    else {
+
+    }
+    return final_base;
+} 
+
+// this function will convert  one number system to another number system.
+document.getElementById("convert").onclick = function(){
+    let num = document.getElementById("Input-Number").value;
+    let ans;
+    let current = currentBase(); // these curent and final are of type Number.
+    let final = finalBase();
+    switch(current){
+        case 10 :
+            switch(final){
+                case 2:
+                case 8:    
+                    ans = decimalToAnySystem(num, final);
+                    break;
+                case 16 :
+                    ans = decimalToHexdecimal(num, current, final);
+                    break;
+            }
+            break;
+        case 2 :
+            switch(final){
+                case 10 :
+                    ans = anySystemToDecimal(num, current);
+                    break;
+                case 8 :
+                    ans = binaryToOctal(num, current, final);
+                    break;
+                case 16:
+                    ans =  anySystemToHexadecimal(num, current, final);
+                    break;
+            }   
+            break; 
+        case 8 :
+            switch(final){
+                case 2:
+                    ans = octalToBinary(num, current, final);
+                    break;
+                case 10 :
+                    ans = anySystemToDecimal(num, current);
+                    break;  
+                case 16 :
+                    ans = anySystemToHexadecimal(num, current, final);
+                    break;
+            } 
+            break;   
+        case 16 :
+            switch(final){
+                case 2 :
+                case 8 :    
+                    ans = hexadecimalToAnySystem(num, current, final);
+                    break;
+                case 10 :
+                    ans = hexadecimalToDecimal(num, current);
+                    break; 
+            }
+            break;   
+    }
+
+    document.getElementById("output").innerHTML = ans;
+}
+
+
+// this is Reset function that will reset the current value of result to -> empty string
+document.getElementById("reset").onclick = function(){
+    document.getElementById("output").innerHTML = "";
+
+}
+
+
 
 function anySystemToDecimal(num, current_base) {
     num = Number(num);
@@ -28,9 +132,7 @@ function anySystemToDecimal(num, current_base) {
 
 }
 
-// call the hexaDecimal to decimal 
-let ans3 = hexadecimalToDecimal("11A", 16);
-console.log("this is conversion from hexadecimal to decimal : ", ans3);
+
 function hexadecimalToDecimal(num, current_base) { // this num will be string type
     let ans = 0;
     let last_digit = 0;
@@ -70,8 +172,7 @@ function hexadecimalToDecimal(num, current_base) { // this num will be string ty
     return ans;
 
 }
-let ans2 = decimalToAnySystem(15, 2);
-console.log(ans2);
+
 
 function decimalToAnySystem(num, final_base) {
     num = Number(num);
@@ -89,8 +190,7 @@ function decimalToAnySystem(num, final_base) {
     return ans;
 }
 
-let ans1 = decimalToHexdecimal("125", 10, 16);
-console.log(...ans1);
+
 function decimalToHexdecimal(num, current_base, final_base) {
     num = Number(num);
     switch (num) {
@@ -115,13 +215,12 @@ function decimalToHexdecimal(num, current_base, final_base) {
         default:
             return decimalToHexadecimal1(num, current_base, final_base);
             break;
-
     }
 }
 
 function decimalToHexadecimal1(num, current_base, final_base) {
     let list = [];
-    let ans = 0;
+    let ans = "";
     let rem = 0;
     while (num != 0) {
         rem = num % final_base;
@@ -151,7 +250,11 @@ function decimalToHexadecimal1(num, current_base, final_base) {
         }
         num = Math.floor(num / final_base);
     }
-    return list;
+    for(let i = 0; i < list.length; i++){
+        ans = ans + list[i];
+
+    }
+    return String(ans);
 }
 
 /* 
@@ -160,30 +263,19 @@ function decimalToHexadecimal1(num, current_base, final_base) {
     hexadecimal -> octal.
 
 */
-let ans4 = hexadecimalToAnySystem("AB", 16, 2);
-console.log("ans4 : ", ans4);
+
 function hexadecimalToAnySystem(num, current_base, final_base) {
     let decimal_value = hexadecimalToDecimal(num, current_base);  // getting the decimal equivalent of hexadecimal number.
     return decimalToAnySystem(decimal_value, final_base);  // and then convert the decimal value to any other system.
 }
 
-let ans5 = binaryToOctal("1010", 2, 8);
-console.log("ans5 : ", ans5);
+
 function binaryToOctal(num, current_base, final_base) {
     let decimal_value = anySystemToDecimal(num, current_base);
     return decimalToAnySystem(decimal_value, final_base);
 }
 
 
-// let ans6 = binaryToHexadecimal("10101011", 2, 16);
-// console.log("ans6 : ", ...ans6);
-// function binaryToHexadecimal(num, current_base, final_base) {
-//     let decimal_value = anySystemToDecimal(num, current_base);
-//     return decimalToHexdecimal(decimal_value, current_base, final_base);
-// }
-
-let ans7 = octalToBinary("98", 8, 2);
-console.log("ans7 : ", ans7);
 function octalToBinary(num, current_base, final_base) {
     let check_value = "Please enter the correct number!";
     let decimal_value = anySystemToDecimal(num, current_base);
@@ -199,8 +291,7 @@ function octalToBinary(num, current_base, final_base) {
 // this below function will convert from 
 // binary -> hexadecimal.
 // octal -> hexadecimal.
-let ans8  = anySystemToHexadecimal("25", 8, 16);
-console.log("ans8 : ", ...ans8);
+
 function anySystemToHexadecimal(num, current_base, final_base){
     let check_value = "Please enter the correct number!";
     

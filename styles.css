@@ -1,7 +1,6 @@
 .background_image{
     margin:0px;
     font-family: 'Roboto Flex', sans-serif;
-
 }
 .header {
     display: flex;
@@ -9,12 +8,9 @@
     align-items: center;
     height: 60px;
     border-bottom:1px solid  rgb(206, 203, 203);
-    
-   
 }
 .header a{
    margin-left: 20px;
-   
    color:  black;
    padding:6px;
    border-radius: 4px;
@@ -29,12 +25,9 @@
     display: flex;
     justify-content: space-between;
     width: 280px;
-
 }
 .header-left a{
     border:1.5px solid rgb(234, 132, 7);
-
-
 }
 .header-left a:hover{
     background-color:  rgb(234, 132, 7);
@@ -46,13 +39,11 @@
     color:black;
     font-family: Verdana, Geneva, Tahoma, sans-serif;
     font-size:14px;
-    margin-right: 20px;
-    
+    margin-right: 20px;  
 }
 
 .header-right a:hover{
     background-color: rgb(58, 194, 58);;
-
 }
 
 
@@ -62,7 +53,7 @@ div.Mydiv{
 }
 .claculator-display{
     border-radius:8px;
-    background-color:rgb(234, 132, 7);
+    background-color:rgb(249, 141, 8);
     width: 450px;
     height:500px;
     padding:12px;
@@ -74,40 +65,49 @@ div.Mydiv{
     font-family: 'Roboto Flex', sans-serif;
     color:rgb(59, 59, 59);
 }
-.select-inputs1 ,.select-inputs2{
+#select-inputs1 ,#select-inputs2{
     padding:5px;
     border-radius:3px;
     border: none;
     width:190px;
     display:inline-block;
+    color: rgb(99, 99, 99);
     background-color:  rgb(223, 219, 219);
 }
 #Input-Number{
     width:418px;
-    padding:11px;
+    height : 20px;
+    padding: 11px;
     border-radius: 0px;
-    background-color: rgb(223, 219, 219);
+    color: rgb(99, 99, 99);
+    background-color: rgb(214, 213, 213);
     border:0.5px;
-    font-size:15px;
-    margin-block-start:5px;
+    font-size:18px;
+    margin-block-start: 5px;
 }
 
 #Button{
     display: flex;
-    margin-left:145px;
+    margin-left: 4px;
 }
 
 #reset {
-    margin-left: 30px;
+    margin-left: 25px;
     padding:6px;
     width:80px;
     font-size:15px;
     border-radius:0px;
-    background-color: black;
+    background-color: rgb(61, 60, 60);
     color:white;
     font-family: 'Roboto Flex', sans-serif;
     border:0px white;
     
+}
+#reset:hover{
+    background-color: black;
+}
+#convert:hover{
+    background-color: black;
 }
 
 #convert{
@@ -118,21 +118,25 @@ div.Mydiv{
     width:80px;
     font-size:15px;
     border-radius:0px;
-    background-color: black;
+    background-color: rgb(61, 60, 60);
     color:white;
     font-family: 'Roboto Flex', sans-serif;
     border:0px white;
 }
-#convert , #reset, :hover{
-    cursor:pointer;
-}
+
 
 #output{
     display:inline-block;
     width:430px;
+    height: 55px;
+    font-size: 20px;
+    padding-top: 20px;
+    padding-left: 10px;
+    color: rgb(99, 99, 99);
+   
     margin-block-start:5px;
     border-radius:8px; 
-    background-color: rgb(223, 219, 219);
+    background-color: rgb(214, 213, 213);
 }
 
 
