@@ -1,6 +1,7 @@
 .background_image{
     margin:0px;
     font-family: 'Roboto Flex', sans-serif;
+    background-color: rgb(232, 228, 228);
 }
 .header {
     display: flex;
@@ -8,6 +9,7 @@
     align-items: center;
     height: 60px;
     border-bottom:1px solid  rgb(206, 203, 203);
+    background-color: white;
 }
 .header a{
    margin-left: 20px;
