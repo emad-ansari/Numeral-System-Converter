@@ -3,50 +3,7 @@
     font-family: 'Roboto Flex', sans-serif;
     background-color: rgb(232, 228, 228);
 }
-.header {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    height: 60px;
-    border-bottom:1px solid  rgb(206, 203, 203);
-    background-color: white;
-}
-.header a{
-   margin-left: 20px;
-   color:  black;
-   padding:6px;
-   border-radius: 4px;
-   text-align: center;
-   text-decoration: none;
-   font-family: 'Roboto Flex', sans-serif;
-   font-size:14px;
 
-}
-
-.header-left{
-    display: flex;
-    justify-content: space-between;
-    width: 280px;
-}
-.header-left a{
-    border:1.5px solid rgb(234, 132, 7);
-}
-.header-left a:hover{
-    background-color:  rgb(234, 132, 7);
-}
-
-
-.header-right a{
-    border: 1.5px solid rgb(58, 194, 58);
-    color:black;
-    font-family: Verdana, Geneva, Tahoma, sans-serif;
-    font-size:14px;
-    margin-right: 20px;  
-}
-
-.header-right a:hover{
-    background-color: rgb(58, 194, 58);;
-}
 
 
 div.Mydiv{
@@ -147,7 +104,7 @@ div.Mydiv{
     width: 220px;
     display:inline-block;
     background-color: white;
-    height: 600px;
+    height: 600px; 
     overflow: auto; 
     margin-right:300px;
 }

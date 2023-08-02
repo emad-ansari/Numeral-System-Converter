@@ -1,0 +1,23 @@
+header {
+    background-color: black;
+    height : 50px;
+    color : white;
+    display : flex;
+}
+.right-section,
+.middle-section,
+.left-section {
+    display : flex;
+    flex : 1;
+}
+
+.middle-section {
+    background-color: rgb(222, 138, 27);
+    display : flex;
+    flex : 2;
+}
+.right-section {
+    display : flex;
+    flex : 2;
+
+}
