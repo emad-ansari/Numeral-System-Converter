@@ -3,21 +3,83 @@ header {
     height : 50px;
     color : white;
     display : flex;
-}
-.right-section,
-.middle-section,
-.left-section {
-    display : flex;
-    flex : 1;
+    position: fixed;
+    left: 0;
+    top: 0;
+    right : 0;
+    height: 50px;
+
 }
 
-.middle-section {
+.left-header-section {
+    display : flex;
+    width: 180px;;
+    align-items : center;
+}
+
+.Logo {
+    display : flex;
+    flex-direction: column;
+    justify-content: center;
+    margin-left : 15px;
+    line-height:1.3em;
+    padding-top:10px;
+    padding-bottom: 10px;
+ 
+}
+.logo-numeral {
+    font-family: 'Philosopher', sans-serif;
+    letter-spacing: 0.08em;
+    margin : 0;
+    font-size: 25px;
+
+}
+.logo-convert {
+    display: flex;
+    justify-content: center;
+    font-size: 15px;
+    
+}
+
+
+.middle-header-section {
     background-color: rgb(222, 138, 27);
     display : flex;
     flex : 2;
+    align-items : center;
+    justify-content: space-around;
+
+    
 }
-.right-section {
+.middle-header-section a{
+   text-decoration: none;
+   color : white;
+}
+.right-header-section {
     display : flex;
-    flex : 2;
+    flex : 1;
+    align-items: center;
+    justify-content: flex-end;
+
+}
+.right-header-section div {
+    margin-right : 25px;
+    background-color: burlywood;
+    padding-left: 10px;
+    padding-right : 10px;
+    padding-top: 6px;
+    padding-bottom: 6px;
+    width: 60px;
+    border-radius : 2px;
+}
+
+.right-header-section a {
+    display : flex;
+    flex-direction: row;
+    align-items: center;
+   
+    text-decoration : none;
+    color : white;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
 
 }
