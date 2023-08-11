@@ -1,13 +1,13 @@
 header {
-    background-color: black;
+    background-color: rgb(39, 112, 248);
     height : 50px;
-    color : white;
     display : flex;
     position: fixed;
     left: 0;
     top: 0;
     right : 0;
     height: 50px;
+    z-index: 80;
 
 }
 
@@ -32,18 +32,19 @@ header {
     letter-spacing: 0.08em;
     margin : 0;
     font-size: 25px;
+    color: black;
 
 }
 .logo-convert {
     display: flex;
     justify-content: center;
     font-size: 15px;
-    
+    color: black;
 }
 
 
 .middle-header-section {
-    background-color: rgb(222, 138, 27);
+    /* background-color: rgb(222, 138, 27); */
     display : flex;
     flex : 2;
     align-items : center;
@@ -52,9 +53,30 @@ header {
     
 }
 .middle-header-section a{
+    position : relative;
    text-decoration: none;
-   color : white;
+   color : black;
+   padding: 5px 8px 5px 8px;
+
+   
 }
+.middle-header-section a::before{
+    content: '';
+    position : absolute;
+    background-color: rgb(248, 172, 59);
+    top : 91%;
+    left : 0;
+    right : 0;
+    bottom: 0;
+    transition: transform 300ms ease-in-out;
+    transform: scaleX(0);
+}
+
+.middle-header-section a:hover::before,
+.middle-header-section a:focus::before{
+    transform: scaleX(1);
+}
+
 .right-header-section {
     display : flex;
     flex : 1;
@@ -64,7 +86,7 @@ header {
 }
 .right-header-section div {
     margin-right : 25px;
-    background-color: burlywood;
+    background-color:rgb(248, 172, 59);
     padding-left: 10px;
     padding-right : 10px;
     padding-top: 6px;
@@ -77,9 +99,86 @@ header {
     display : flex;
     flex-direction: row;
     align-items: center;
-   
     text-decoration : none;
-    color : white;
+    color : black;
     font-family: Verdana, Geneva, Tahoma, sans-serif;
+
+}
+.fa-user{
+    margin-left: 4px;
+    color : black;
+}
+.ri-menu-3-line {
+    display : none;
+
+}
+.ri-menu-3-line:hover{
+    background-color: rgb(248, 172, 59);;
+}
+
+#menu-side-bar {
+    display : none;
+    background-color: rgb(247, 247, 247);
+    float : right;
+    width: 200px;
+    position : fixed;
+    bottom: 0;
+    top: 0;
+    right : 0; 
+    z-index: 100;
+    
+}
+
+#menu-side-bar ul{
+    list-style: none;
+}
+
+#menu-side-bar ul li {
+    padding: 10px;
+}
+
+#menu-side-bar ul li i {
+    margin-right : 15px;
+    font-size: 25px;
+}
+
+#menu-side-bar ul li a{
+    text-decoration: none;
+    font-size: 16px;
+    color : black;
+}
+
+.ri-close-line {
+    padding: 2px;
+    border-radius: 50px;
+    border: 1px solid black;
+}
+@media (max-width: 600px){
+   
+    .logo-numeral{
+        font-size: 28fpx;
+        color : rgb(248, 172, 59);
+
+    }
+    .logo-convert {
+        color:rgb(235, 207, 164);
+    }
+    .ri-menu-3-line {
+        display: block;
+        position: relative;
+        color :rgb(248, 172, 59);
+    
+        padding: 10px 13px;
+        font-size: 25px;
+        border-radius : 50px;
+    }
+    .middle-header-section a,
+    .right-header-section div  {
+        display: none;
+    }
+   
+
+
+
 
 }

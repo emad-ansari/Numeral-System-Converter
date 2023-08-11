@@ -15,6 +15,7 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
     integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw=="
     crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/remixicon/3.5.0/remixicon.css" integrity="sha512-HXXR0l2yMwHDrDyxJbrMD9eLvPe3z3qL3PPeozNTsiHJEENxx8DH2CxmV05iwG0dwoz5n4gQZQyYLUNt1Wdgfg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
 </head>
 <body>
   
@@ -27,26 +28,34 @@
             
         </div>
         <div class = "middle-header-section">
+            
             <div><a href="#">Home</a></div>
-            <div><a href="#">About</a></div>
+            <div><a href="#">About </a></div>
             <div><a href="#">Skills</a></div> 
             <div><a href="#">Portfolio</a></div>
 
         </div>
         <div class = "right-header-section">
             <div><a href="#">LogIn
-                <i class="fa-solid fa-user fa-xs" style = "color : white" ></i>
+                <i class="fa-solid fa-user fa-xs"  ></i>
             </a></div>
+            <i  id = "menu-bar"class="ri-menu-3-line"></i>
         </div>
     </header>
-
-    <div class = "calculator-section">
-
+    <div id = "menu-side-bar">
+        <ul>
+            <li><i id = "crossBtn" class="ri-close-line"></i></li>
+            <li><i class="ri-home-4-line"></i></i><a href="">Home</a></li>
+            <li><i class="ri-question-line"></i><a href="">About</a></li>
+            <li><i class="ri-file-paper-2-line"></i><a href="">Portfolio</a></li>
+            <li><i class="ri-login-box-line"></i><a href="">LogIn</a></li>
+        </ul>
+        
+        
     </div>
 
-    <div class = "content-section"></div>
 
     
-    <script src = "calculator.js"></script>
+    <script src = "app.js"></script>
 </body>
 </html>
