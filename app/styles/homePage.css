@@ -1,0 +1,57 @@
+.main-content {
+   
+    display: flex;
+    position: relative;
+    top: 50px;
+    left: 0;
+    right : 0;
+    height : 500px;
+    color : black;;
+}
+
+.description {
+    background: rgb(171,166,255);
+    background: linear-gradient(103deg, rgba(171,166,255,1) 0%, rgba(141,191,255,1) 100%, rgba(233,232,233,1) 100%, rgba(0,212,255,1) 100%); 
+    display : flex;
+    flex:1;
+    flex-direction: column;
+
+
+
+}
+.description h1{
+    font-family: "Nunito", sans-serif;
+    font-size: 3.2vw;
+    padding-top: 120px;
+    padding-left: 50px;
+    animation-name: heading;
+    animation: translate;
+
+}
+.description span{
+    padding-top: 5px;
+    padding-left:50px;
+    padding-right: 30px;
+    font-size: 1vw;
+    font-family: 'Open Sans', sans-serif;
+
+}
+.calculator-image {
+    display : flex;
+    flex:1;
+
+}
+.calculator-image img{
+    width: 750px;
+    height: 500px;
+
+
+  
+
+}
+
+@keyframes heading{
+    0%{top: -10px;};
+    100%{top: 120px;}
+
+}

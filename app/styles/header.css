@@ -153,32 +153,3 @@ header {
     border-radius: 50px;
     border: 1px solid black;
 }
-@media (max-width: 600px){
-   
-    .logo-numeral{
-        font-size: 28fpx;
-        color : rgb(248, 172, 59);
-
-    }
-    .logo-convert {
-        color:rgb(235, 207, 164);
-    }
-    .ri-menu-3-line {
-        display: block;
-        position: relative;
-        color :rgb(248, 172, 59);
-    
-        padding: 10px 13px;
-        font-size: 25px;
-        border-radius : 50px;
-    }
-    .middle-header-section a,
-    .right-header-section div  {
-        display: none;
-    }
-   
-
-
-
-
-}
