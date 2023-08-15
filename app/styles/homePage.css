@@ -1,5 +1,4 @@
-.main-content {
-   
+.upper-content {
     display: flex;
     position: relative;
     top: 50px;
@@ -15,27 +14,48 @@
     display : flex;
     flex:1;
     flex-direction: column;
-
-
-
 }
-.description h1{
+.description-heading {
+    
+    height: 220px;
+    text-align: center;
+  
+}
+.description-heading h1{
     font-family: "Nunito", sans-serif;
+    color:rgb(231, 220, 207);
     font-size: 3.2vw;
-    padding-top: 120px;
+    position: relative;
+    animation-name: myheading;
+    animation-duration: 3s;
+    animation-fill-mode: forwards;
+    line-height: 0.8;
+
+}
+@keyframes myheading{
+    0%   {top: -50px;}
+    100% {top: 150px;}
+}
+.description-content {
     padding-left: 50px;
-    animation-name: heading;
-    animation: translate;
-
+    padding-right: 50px;
 }
-.description span{
-    padding-top: 5px;
-    padding-left:50px;
-    padding-right: 30px;
+.description-content span{
+    position : relative;
     font-size: 1vw;
+    margin: auto;
     font-family: 'Open Sans', sans-serif;
-
+    color:black;
+    animation-name: contentAnimation;
+    animation-duration: 3s;
+    animation-fill-mode: forwards;
+  
 }
+@keyframes contentAnimation {
+    0% {left: -1000px;}
+    100% {left: 15px;}
+}
+
 .calculator-image {
     display : flex;
     flex:1;
@@ -44,14 +64,13 @@
 .calculator-image img{
     width: 750px;
     height: 500px;
+}
 
-
-  
+.calculator-interface-container {
+    position: relative;
+    top: 50px;
+    background-color: blue;
+    
 
 }
 
-@keyframes heading{
-    0%{top: -10px;};
-    100%{top: 120px;}
-
-}
