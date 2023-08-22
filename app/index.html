@@ -9,6 +9,7 @@
     <link rel="stylesheet" href="styles/general.css">
     <link rel="stylesheet" href="styles/sidebar.css">
     <link rel="stylesheet" href="styles/homePage.css">
+    <link rel="stylesheet" href="styles/calculator.css">
 
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -47,15 +48,14 @@
         </header>
     
         <div id = "menu-side-bar">
+            <div><i id = "crossBtn" class="ri-close-line"></i></div>
             <ul>
-                <li><i id = "crossBtn" class="ri-close-line"></i></li>
+                
                 <li><i class="ri-home-4-line"></i></i><a href="">Home</a></li>
                 <li><i class="ri-question-line"></i><a href="">About</a></li>
                 <li><i class="ri-file-paper-2-line"></i><a href="">Portfolio</a></li>
                 <li><i class="ri-login-box-line"></i><a href="">LogIn</a></li>
             </ul>
-            
-            
         </div>
     
         <div class = "upper-content">
@@ -69,19 +69,52 @@
                 </div>
     
             </div>
+
             <div class = "calculator-image">
                 <img src="images/calculator.jpg" alt="calculator image">
             </div>
         </div>
-    
-        <!-- <div class ="calculator-interface-container ">
-            <div class = "calculator-interface">
-                calculator-interface
         
-            </div>
-        </div> -->
-    </div>
+         <div class = "calculator-section">
+            <form class="claculator-display">
+                <div>
+                    <label for="select-inputs1">From</label>
+                    <select id ="select-inputs1">
+                        <option id = "current_decimal" value="Decimal">Decimal</option>
+                        <option id = "current_binary" value="Binary">Binary</option>
+                        <option id = "current_octal" value="Octal">Octal</option>
+                        <option id = "current_hexadecimal" value="HexaDecimal">HexaDecimal</option>
+                    </select>
+                    <label for="select-inputs2">To</label>
+                    <select id ="select-inputs2">
+                        <option id = "final_decimal" value="Decimal">Decimal</option>
+                        <option id = "final_binary" value="Binary">Binary</option>
+                        <option id = "final_octal" value="Octal">Octal</option>
+                        <option id = "final_hexadecimal" value="HexaDecimal">HexaDecimal</option>
+                    </select>
+                </div><br><br>
+                <div>
+                    <label for="Input-Number">Enter Number : </label>
+                    <div><input type="text" id="Input-Number" placeholder="Enter a number"></div>
+                </div>
+                <br>
+                <br>
+                <div id="Button">
+                    <button id="convert" type="submit">Convert</button>
+                    <button id="reset" type="reset">Reset</button>
+                </div>
+                <br>
+                <br><br>
+                <div id="Output">
+                    <label for="output">Result :</label>
+                    <div id="output"></div>
+                </div>
+            </form>
+         </div>
 
+    </div>
+    
+    
 
     <script src = "app.js"></script>
 </body>

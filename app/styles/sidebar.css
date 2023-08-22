@@ -1,3 +1,65 @@
+.ri-menu-3-line {
+    display : none;
+
+}
+#crossBtn{
+    position: absolute;
+    top : 5px;
+    left: 5px;
+    margin-bottom: 10px;
+
+
+}
+#menu-side-bar {
+    display : none;
+    background-color: rgb(247, 247, 247);
+    float : right;
+    width: 200px;
+    position : fixed;
+    bottom: 0;
+    top: 0;
+    right : 0; 
+    z-index: 100;
+    animation-name: sidebaranimation;
+    animation-duration: 0.1s;
+    animation-timing-function: ease-in-out;
+
+}
+@keyframes sidebaranimation {
+    0% {right: -200px;}
+    100% {right: 0px};
+}
+
+#menu-side-bar ul{
+    list-style: none;
+    margin-top : 30px;
+}
+
+#menu-side-bar ul li {
+    padding: 10px;
+}
+
+#menu-side-bar ul li i {
+    margin-right : 15px;
+    font-size: 25px;
+}
+
+#menu-side-bar ul li a{
+    text-decoration: none;
+    font-size: 16px;
+    color : black;
+}
+#menu-side-bar ul li:hover{
+    background-color: rgb(195, 227, 255);
+}
+.ri-close-line {
+    padding: 2px;
+    border-radius: 50px;
+    border: 1px solid black;
+}
+
+
+
 @media (max-width: 600px){
    
     .logo-numeral{
@@ -28,10 +90,10 @@
     }
 
     #menu-side-bar ul li i {
-        font-size: 30px;
+        font-size: 25px;
     }
     #menu-side-bar ul li a {
-        font-size: 25px;
+        font-size: 20px;
     }
 
 }

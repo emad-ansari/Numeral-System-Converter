@@ -1,0 +1,93 @@
+
+.calculator-section {
+    
+    display : flex;
+    justify-content: center;
+}
+.claculator-display{
+    border-radius:8px;
+    background: rgb(112,147,248);
+    background: linear-gradient(0deg, rgba(112,147,248,1) 26%, rgba(254,196,125,1) 100%);
+    width: 450px;
+    height:500px;
+    padding:12px;
+    display:inline-block;
+    margin-top:80px;
+}
+.claculator-display label{
+    font-size:15px;
+    font-family: 'Roboto Flex', sans-serif;
+    color: rgb(81, 81, 81);
+}
+#select-inputs1 ,#select-inputs2{
+    padding:5px;
+    border-radius:3px;
+    border: none;
+    width:190px;
+    display:inline-block;
+    color: rgb(99, 99, 99);
+    background-color:  rgb(234, 234, 234);
+}
+#Input-Number{
+    width:418px;
+    height : 20px;
+    padding: 11px;
+    border-radius: 0px;
+    color: rgb(99, 99, 99);
+    background-color: rgb(234, 234, 234);
+    border:0.5px;
+    font-size:18px;
+    margin-block-start: 5px;
+}
+
+#Button{
+    display: flex;
+    margin-left: 4px;
+}
+
+#reset {
+    margin-left: 25px;
+    padding:6px;
+    width:80px;
+    font-size:15px;
+    border-radius:0px;
+    background-color: rgb(61, 60, 60);
+    color:white;
+    font-family: 'Roboto Flex', sans-serif;
+    border:0px white;
+    
+}
+#reset:hover{
+    background-color: black;
+}
+#convert:hover{
+    background-color: black;
+}
+
+#convert{
+    padding-top: 6px;
+    padding-bottom: 6px;
+    padding-left: 9px;
+    padding-right: 9px;
+    width:80px;
+    font-size:15px;
+    border-radius:0px;
+    background-color: rgb(61, 60, 60);
+    color:white;
+    font-family: 'Roboto Flex', sans-serif;
+    border:0px white;
+}
+
+
+#output{
+    display:inline-block;
+    width:430px;
+    height: 55px;
+    font-size: 20px;
+    padding-top: 20px;
+    padding-left: 10px;
+    color: rgb(99, 99, 99);
+    margin-block-start:5px;
+    border-radius:8px; 
+    background-color: rgb(234, 234, 234);
+}

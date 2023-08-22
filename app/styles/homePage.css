@@ -4,7 +4,7 @@
     top: 50px;
     left: 0;
     right : 0;
-    height : 500px;
+    height : 400px;
     color : black;;
 }
 
@@ -62,41 +62,26 @@
 
 }
 .calculator-image img{
-    width: 750px;
-    height: 500px;
+    display : flex;
+    flex: 1;
+    height: 100%;
 }
 
-.calculator-interface-container {
-    position: relative;
-    top: 50px;
-    background-color: blue;
-    height: 600px;
-    display: flex;
-    flex-direction: row;
-
-    
-
-}
-.calculator-interface {
-    background-color:rgb(230, 131, 10);
-  
-
-}
-@media (max-width: 1100px  ){
+@media (max-width: 1100px){
     .description {
         display: none;
     }
     .calculator-image img {
+        width: 490px;
+        height: 350px;
+        flex: 1;
         animation-name: imageFullMode;
         animation-duration: 2s;
         animation-fill-mode: forwards;
     }
-    @keyframes imageFullMode{
-      
-        100% {flex: 1;}
-
+    .claculator-display{
+        margin-top:0px;
     }
-
-
+   
 }
 
