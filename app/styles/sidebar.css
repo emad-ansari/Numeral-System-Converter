@@ -42,6 +42,7 @@
 #menu-side-bar ul li i {
     margin-right : 15px;
     font-size: 25px;
+    color: rgb(248, 172, 59);
 }
 
 #menu-side-bar ul li a{
@@ -90,10 +91,10 @@
     }
 
     #menu-side-bar ul li i {
-        font-size: 25px;
+        font-size: 20px;
     }
     #menu-side-bar ul li a {
-        font-size: 20px;
+        font-size: 18px;
     }
 
 }
