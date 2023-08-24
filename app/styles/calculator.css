@@ -1,6 +1,7 @@
 .calculator-section {
     background-image: linear-gradient(to right, #434343 0%, black 100%);
-
+    position: relative;
+    top: 50px;
     display: flex;
     justify-content: center;
 }
@@ -13,7 +14,7 @@
     height: 500px;
     padding: 12px;
     display: inline-block;
-    margin-top: 80px;
+    margin-top: 50px;
 }
 
 .claculator-display label {

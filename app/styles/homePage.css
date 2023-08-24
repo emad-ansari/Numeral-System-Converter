@@ -18,7 +18,7 @@
 }
 .description-heading {
     
-    height: 200px;
+    height: 180px;
     text-align: center;
   
 }
@@ -70,12 +70,17 @@
 }
 
 @media (max-width: 1100px){
-    .description{
-        display: none;
+    .description-heading h1{
+        font-size: 7vw;
+
     }
-    .calculator-image img {
-        width: 490px;
-        height: 350px;
+    .description-content span{
+        font-size: 2.5vw;
+    }
+    
+    .calculator-image  {
+       display: none;
+        
     }
    
    
