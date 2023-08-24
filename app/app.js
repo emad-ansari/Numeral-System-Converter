@@ -1,5 +1,5 @@
 // write logic for side bar menu opening and closing
-// console.log('hello');
+
 const menuBtn = document.getElementById('menu-bar');
 menuBtn.addEventListener('click', openSideMenuBar);
 function openSideMenuBar(){
