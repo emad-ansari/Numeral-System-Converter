@@ -1,3 +1,4 @@
+
 .upper-content {
     display: flex;
     position: relative;
@@ -7,6 +8,7 @@
     height : 400px;
     color : black;
     flex-direction: row;
+   
 }
 
 .description {
@@ -70,6 +72,10 @@
 }
 
 @media (max-width: 1100px){
+    .calculator-image  {
+        display: none;
+         
+     }
     .description-heading h1{
         font-size: 7vw;
 
@@ -78,9 +84,89 @@
         font-size: 2.5vw;
     }
     
-    .calculator-image  {
-       display: none;
-        
+   
+   
+   
+}
+
+.upper-content {
+    display: flex;
+    position: relative;
+    top: 50px;
+    left: 0;
+    right : 0;
+    height : 400px;
+    color : black;
+    flex-direction: row;
+}
+
+.description {
+    background: rgb(171,166,255);
+    background: linear-gradient(103deg, rgba(171,166,255,1) 0%, rgba(141,191,255,1) 100%, rgba(233,232,233,1) 100%, rgba(0,212,255,1) 100%); 
+    display : flex;
+    flex:1;
+    flex-direction: column;
+}
+.description-heading {
+    
+    height: 200px;
+    text-align: center;
+  
+}
+.description-heading h1{
+    font-family: "Nunito", sans-serif;
+    color:rgb(231, 220, 207);
+    font-size: 3.2vw;
+    position: relative;
+    animation-name: myheading;
+    animation-duration: 3s;
+    animation-fill-mode: forwards;
+    line-height: 0.8;
+
+}
+@keyframes myheading{
+    0%   {top: -50px;}
+    100% {top: 130px;}
+}
+.description-content {
+    padding-left: 50px;
+    padding-right: 50px;
+}
+.description-content span{
+    position : relative;
+    font-size: 0.9vw;
+    margin: auto;
+    text-align: center;
+    font-family: 'Varela', sans-serif;
+    color:black;
+    animation-name: contentAnimation;
+    animation-duration: 3s;
+    animation-fill-mode: forwards;
+  
+}
+@keyframes contentAnimation {
+    0% {left: -1000px;}
+    100% {left: 15px;}
+}
+
+.calculator-image {
+    display : flex;
+    flex:1;
+
+}
+.calculator-image img{
+    display : flex;
+    flex: 1;
+    height: 100%;
+}
+
+@media (max-width: 1100px){
+    .description{
+        display: none;
+    }
+    .calculator-image img {
+        width: 100%;
+   
     }
    
    

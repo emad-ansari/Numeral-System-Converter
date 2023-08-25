@@ -1,20 +1,24 @@
 .calculator-section {
     background-image: linear-gradient(to right, #434343 0%, black 100%);
+
     position: relative;
     top: 50px;
     display: flex;
     justify-content: center;
+    height: 580px;
 }
 
 .claculator-display {
     border-radius: 8px;
+
     background: rgb(112, 147, 248);
     background: linear-gradient(0deg, rgba(112, 147, 248, 1) 26%, rgba(254, 196, 125, 1) 100%);
     width: 450px;
     height: 500px;
     padding: 12px;
     display: inline-block;
-    margin-top: 50px;
+    margin-top: 30px;
+
 }
 
 .claculator-display label {
@@ -99,3 +103,24 @@
     border-radius: 8px;
     background-color: rgb(234, 234, 234);
 }
+
+
+
+@media (max-width: 480px) {
+
+    .claculator-display{
+        width: 90%;
+    }
+    #select-inputs1,
+    #select-inputs2 {
+        width: 142px;
+    }
+    #Input-Number {
+        width: 326px;
+    } 
+    #output {
+        width : 337px;
+    }
+
+}
+
