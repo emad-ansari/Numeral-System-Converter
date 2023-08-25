@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -116,4 +117,124 @@
 
     <script src = "app.js"></script>
 </body>
+=======
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>my website</title>
+    <link rel="stylesheet" href="styles/header.css">
+    <link rel="stylesheet" href="styles/general.css">
+    <link rel="stylesheet" href="styles/sidebar.css">
+    <link rel="stylesheet" href="styles/homePage.css">
+    <link rel="stylesheet" href="styles/calculator.css">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Lobster+Two:ital@1&family=Nunito:wght@300;500;600;700;800&family=Open+Sans:wght@300;400&family=Philosopher:ital@1&family=Varela&display=swap" rel="stylesheet">
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+    integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw=="
+    crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/remixicon/3.5.0/remixicon.css" integrity="sha512-HXXR0l2yMwHDrDyxJbrMD9eLvPe3z3qL3PPeozNTsiHJEENxx8DH2CxmV05iwG0dwoz5n4gQZQyYLUNt1Wdgfg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+</head>
+<body>
+  
+    <div class = "main-content">
+        <header>
+            <div class = "left-header-section">
+                <div class = Logo>
+                    <span class = "logo-numeral">Numeral</span>
+                    <span class = "logo-convert">Converter</span> 
+                </div>
+                
+            </div>
+            <div class = "middle-header-section">
+                
+                <div><a href="#">Home</a></div>
+                <div><a href="#">About </a></div>
+                <div><a href="#">Skills</a></div> 
+                <div><a href="#">Portfolio</a></div>
+    
+            </div>
+            <div class = "right-header-section">
+                <div><a href="#">LogIn
+                    <i class="fa-solid fa-user fa-xs"  ></i>
+                </a></div>
+                <i  id = "menu-bar"class="ri-menu-3-line"></i>
+            </div>
+        </header>
+    
+        <div id = "menu-side-bar">
+            <div><i id = "crossBtn" class="ri-close-line"></i></div>
+            <ul>
+                
+                <li><i class="ri-home-4-line"></i></i><a href="">Home</a></li>
+                <li><i class="ri-question-line"></i><a href="">About</a></li>
+                <li><i class="ri-file-paper-2-line"></i><a href="">Portfolio</a></li>
+                <li><i class="ri-login-box-line"></i><a href="">LogIn</a></li>
+            </ul>
+        </div>
+    
+        <div class = "upper-content">
+            <div class = "description">
+                <div class = "description-heading"> 
+                    <h1>Numeral system converter</h1>
+                </div>
+                <div class = "description-content"> 
+                    <span>
+                        The Numeral System Converter is a versatile tool designed to effortlessly convert numbers between different numeral systems, such as binary, octal, decimal, and hexadecimal. With its user-friendly interface, users can input a number in one system and instantly receive its equivalent value in any other chosen system. Whether you're a student, programmer, or enthusiast, this project streamlines the process of numeral system conversions, making it an indispensable companion for anyone working with diverse numeric representations.</span>
+                </div>
+    
+            </div>
+
+            <div class = "calculator-image">
+                <img src="images/calculator.jpg" alt="calculator image">
+            </div>
+        </div>
+        
+         <div class = "calculator-section">
+            <form class="claculator-display">
+                <div>
+                    <label for="select-inputs1">From</label>
+                    <select id ="select-inputs1">
+                        <option id = "current_decimal" value="Decimal">Decimal</option>
+                        <option id = "current_binary" value="Binary">Binary</option>
+                        <option id = "current_octal" value="Octal">Octal</option>
+                        <option id = "current_hexadecimal" value="HexaDecimal">HexaDecimal</option>
+                    </select>
+                    <label for="select-inputs2">To</label>
+                    <select id ="select-inputs2">
+                        <option id = "final_decimal" value="Decimal">Decimal</option>
+                        <option id = "final_binary" value="Binary">Binary</option>
+                        <option id = "final_octal" value="Octal">Octal</option>
+                        <option id = "final_hexadecimal" value="HexaDecimal">HexaDecimal</option>
+                    </select>
+                </div><br><br>
+                <div>
+                    <label for="Input-Number">Enter Number : </label>
+                    <div><input type="text" id="Input-Number" placeholder="Enter a number"></div>
+                </div>
+                <br>
+                <br>
+                <div id="Button">
+                    <button id="convert" type="submit">Convert</button>
+                    <button id="reset" type="reset">Reset</button>
+                </div>
+                <br>
+                <br><br>
+                <div id="Output">
+                    <label for="output">Result :</label>
+                    <div id="output"></div>
+                </div>
+            </form>
+         </div>
+
+    </div>
+
+    <script src = "app.js"></script>
+</body>
+>>>>>>> 5dabb051435a6b3366a5b2ead4f92bf499474719
 </html>
