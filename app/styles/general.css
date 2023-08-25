@@ -1,4 +1,4 @@
-<<<<<<< HEAD
+
 * {
     padding : 0;
     margin : 0;
@@ -8,14 +8,4 @@
 body {
     font-family: 'Roboto Flex', sans-serif;
     padding-bottom: 500px;
-=======
-* {
-    padding : 0;
-    margin : 0;
-    
-}
-
-body {
-    font-family: 'Roboto Flex', sans-serif;
->>>>>>> 5dabb051435a6b3366a5b2ead4f92bf499474719
 }
