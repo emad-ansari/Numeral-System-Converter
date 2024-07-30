@@ -55,6 +55,9 @@ header {
    color : white; 
    padding: 5px 8px 5px 8px;
    font-size: 14px;
+   font-family: "DM Mono", monospace;
+   font-weight: 400;
+   font-style: normal;
 
 
 }
@@ -96,6 +99,9 @@ header {
     padding-right: 8px;
     padding-top: 5px;
     padding-bottom: 5px;
+    font-family: "DM Mono", monospace;
+    font-weight: 400;
+    font-style: normal;
 }
 .right-header-section a:hover {
     background: white;

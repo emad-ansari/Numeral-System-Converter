@@ -1,6 +1,4 @@
 .calculator-section {
-    background-image: linear-gradient(to right, #434343 0%, black 100%);
-
     position: relative;
     top: 50px;
     display: flex;
@@ -8,11 +6,9 @@
     height: 580px;
 }
 
-.claculator-display {
+.claculator-card {
     border-radius: 8px;
-
-    background: rgb(112, 147, 248);
-    background: linear-gradient(0deg, rgba(112, 147, 248, 1) 26%, rgba(254, 196, 125, 1) 100%);
+    background: #1f2937;
     width: 450px;
     height: 500px;
     padding: 12px;
@@ -21,10 +17,10 @@
 
 }
 
-.claculator-display label {
+.claculator-card label {
     font-size: 15px;
     font-family: 'Roboto Flex', sans-serif;
-    color: rgb(81, 81, 81);
+    color: #6b7280;
 }
 
 #select-inputs1,
@@ -35,7 +31,9 @@
     width: 190px;
     display: inline-block;
     color: rgb(99, 99, 99);
-    background-color: rgb(234, 234, 234);
+    background-color: #111827;
+    outline: none;
+
 }
 
 #Input-Number {
@@ -44,10 +42,13 @@
     padding: 11px;
     border-radius: 0px;
     color: rgb(99, 99, 99);
-    background-color: rgb(234, 234, 234);
+    background-color: #111827;
     border: 0.5px;
-    font-size: 18px;
+    font-size: 14px;
     margin-block-start: 5px;
+    border-radius: 3px;
+    outline: none;
+
 }
 
 #Button {
@@ -57,14 +58,15 @@
 
 #reset {
     margin-left: 25px;
-    padding: 6px;
-    width: 80px;
+    padding: 10px;
+    width: 100px;
     font-size: 15px;
     border-radius: 0px;
-    background-color: rgb(61, 60, 60);
+    background-color: #111827;
     color: white;
     font-family: 'Roboto Flex', sans-serif;
     border: 0px white;
+    border-radius: 3px;
 
 }
 
@@ -81,13 +83,14 @@
     padding-bottom: 6px;
     padding-left: 9px;
     padding-right: 9px;
-    width: 80px;
+    width: 100px;
     font-size: 15px;
     border-radius: 0px;
-    background-color: rgb(61, 60, 60);
+    background-color: #111827;
     color: white;
     font-family: 'Roboto Flex', sans-serif;
     border: 0px white;
+    border-radius: 3px;
 }
 
 
@@ -101,14 +104,14 @@
     color: rgb(99, 99, 99);
     margin-block-start: 5px;
     border-radius: 8px;
-    background-color: rgb(234, 234, 234);
+    background-color: #111827;
 }
 
 
 
 @media (max-width: 480px) {
 
-    .claculator-display{
+    .claculator-card{
         width: 90%;
     }
     #select-inputs1,

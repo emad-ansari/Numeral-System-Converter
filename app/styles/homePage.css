@@ -49,14 +49,15 @@
 }
 .description-content span{
     position : relative;
-    font-size: 1vw;
+    font-size: 1.1vw;
     margin: auto;
     font-family: 'Varela', sans-serif;
-    color:white;
+    color: #475569;
     animation-name: contentAnimation;
     animation-duration: 3s;
     animation-fill-mode: forwards;
     align-items: center;
+    letter-spacing: 1px;;
   
 }
 @keyframes contentAnimation {
@@ -76,9 +77,5 @@
     .description-content span{
         font-size: 2.5vw;
     }
-    
-   
-   
-   
 }
 
