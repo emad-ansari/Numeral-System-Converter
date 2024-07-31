@@ -58,7 +58,8 @@
     animation-fill-mode: forwards;
     align-items: center;
     letter-spacing: 1px;;
-  
+    text-align: justify;
+    text-align-last: center;
 }
 @keyframes contentAnimation {
     0% {left: -1000px;}
