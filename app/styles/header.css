@@ -18,12 +18,14 @@ header {
 
 .Logo {
     display : flex;
-    flex-direction: column;
+    flex-direction: row;
     justify-content: center;
+    gap: 5px;
     margin-left : 15px;
     line-height:1.3em;
     padding-top:10px;
     padding-bottom: 10px;
+    align-items: center;
 }
 .logo-numeral {
     font-family: 'Philosopher', sans-serif;
@@ -45,12 +47,12 @@ header {
     display : flex;
     flex : 2;
     align-items : center;
-    justify-content: end;
+    justify-content: center;
     gap: 50px;
 
 }
 .middle-header-section a{
-    position : relative;
+   position : relative;
    text-decoration: none;
    color : white; 
    padding: 5px 8px 5px 8px;
@@ -64,8 +66,8 @@ header {
 .middle-header-section a::before{
     content: '';
     position : absolute;
-    background-color: rgb(248, 172, 59);
-    top : 91%;
+    background-color: #475569;;
+    top : 94%;
     left : 0;
     right : 0;
     bottom: 0;

@@ -8,19 +8,18 @@
 
 .claculator-card {
     border-radius: 8px;
-    background: #1f2937;
+    background:  #64748b;
     width: 450px;
     height: 500px;
     padding: 12px;
     display: inline-block;
     margin-top: 30px;
-
 }
 
 .claculator-card label {
-    font-size: 15px;
+    font-size: 14px;
     font-family: 'Roboto Flex', sans-serif;
-    color: #6b7280;
+    color: #0f172a
 }
 
 #select-inputs1,
@@ -31,7 +30,7 @@
     width: 190px;
     display: inline-block;
     color: rgb(99, 99, 99);
-    background-color: #111827;
+    background-color:#111827;
     outline: none;
 
 }
@@ -60,13 +59,12 @@
     margin-left: 25px;
     padding: 10px;
     width: 100px;
-    font-size: 15px;
-    border-radius: 0px;
+    font-size: 14px;
     background-color: #111827;
-    color: white;
+    color:  #94a3b8;
     font-family: 'Roboto Flex', sans-serif;
     border: 0px white;
-    border-radius: 3px;
+    border-radius: 5px;
 
 }
 
@@ -84,13 +82,12 @@
     padding-left: 9px;
     padding-right: 9px;
     width: 100px;
-    font-size: 15px;
-    border-radius: 0px;
+    font-size: 14px;
     background-color: #111827;
-    color: white;
+    color:  #94a3b8;
     font-family: 'Roboto Flex', sans-serif;
     border: 0px white;
-    border-radius: 3px;
+    border-radius: 5px;
 }
 
 
