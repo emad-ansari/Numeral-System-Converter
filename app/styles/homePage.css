@@ -40,19 +40,18 @@
     display: flex;
     align-items: center;
     justify-content: center;
-    padding-left: 125px;
-    padding-right: 50px;
+    padding-left: 150px;
     width: 70vw;
     text-align: center;
     line-height: 1.5rem;
-    
+
 }
 .description-content span{
     position : relative;
     font-size: 1.1vw;
     margin: auto;
     font-family: 'Varela', sans-serif;
-    color: #475569;
+    color: #94a3b8;
     animation-name: contentAnimation;
     animation-duration: 3s;
     animation-fill-mode: forwards;
@@ -63,7 +62,7 @@
 }
 @keyframes contentAnimation {
     0% {left: -1000px;}
-    100% {left: 15px;}
+    100% {left: 25px;}
 }
 
 @media (max-width: 1100px){
